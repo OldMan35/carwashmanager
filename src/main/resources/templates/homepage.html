@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Wash manager</title>
+</head>
+<body>
+<div style="text-align: center;"/>
+<h1>Welcome!</h1><br>
+<!--<form th:method="POST" th:action="@{/homepage}" th:object="${admin}">-->
+<!--    <label for="name">Enter name: </label>-->
+<!--    <input type="text" th:field="*{name}" id="name">-->
+<!--    &lt;!&ndash;    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error text</div>&ndash;&gt;-->
+<!--    <br/>-->
+<!--    <label for="password">Enter password: </label>-->
+<!--    <input type="text" th:field="*{password}" id="password">-->
+<!--    &lt;!&ndash;    <div style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">error text</div>&ndash;&gt;-->
+<!--    <br/>-->
+<!--    <input type="submit" value="Login"/>-->
+<!--</form>-->
+<hr>
+//TO DO: сделать кнопки в одну линию
+<form action="/adminpage" method="GET">
+    <button type="submit">Admin</button>
+</form>
+<form action="/registration" method="GET">
+    <button type="submit">Registration</button>
+</form>
+
+</body>
+</html>
