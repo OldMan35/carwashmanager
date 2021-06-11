@@ -9,6 +9,7 @@ public class DefaultController {
 
     @GetMapping("/homepage")
     public String homepage() {
+
         return "homepage";
     }
 
@@ -20,11 +21,13 @@ public class DefaultController {
 //    }
     @GetMapping("/adminpage")
     public String adminpage() {
+
         return "adminpage";
     }
 
     @GetMapping("/registration")
     public String registration() {
+
         return "registration";
     }
 
