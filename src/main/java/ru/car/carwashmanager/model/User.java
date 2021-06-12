@@ -12,11 +12,11 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String dateOfVisit;
-    private String telephoneNumber;
+    @Column(name = "client_name")
     private String clientName;
-    private String carBrand;
-    private String serviceType;
-    private int servicePrice;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "password")
+    private String password;
 
 }

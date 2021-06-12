@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Registration page</title>
@@ -7,6 +7,21 @@
 <body>
 <div style="text-align: center;"/>
 <h1>Registration form</h1>
-
+<form th:method="POST" th:action="@{/registration}" th:object="${user}">
+    <label for="clientName">Enter name: </label>
+    <input type="text" th:field="*{clientName}" id="clientName">
+    <!--    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error text</div>-->
+    <br/>
+    <label for="email">Enter email: </label>
+    <input type="text" th:field="*{email}" id="email">
+    <!--    <div style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">error text</div>-->
+    <br/>
+    <label for="password">Enter password: </label>
+    <input type="text" th:field="*{password}" id="password">
+    <!--    <div style="color: red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">error text</div>-->
+    <br/>
+    <input type="submit" value="Register"/>
+</form>
+<hr>
 </body>
 </html>
