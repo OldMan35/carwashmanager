@@ -10,7 +10,8 @@ import javax.persistence.*;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @SequenceGenerator(name = "jpaSequence", sequenceName = "JPA_SEQUENCE", allocationSize = 1, initialValue = 1 )
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     @Column(name = "client_name")
     private String clientName;
