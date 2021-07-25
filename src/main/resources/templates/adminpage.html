@@ -23,8 +23,8 @@
             <tbody>
             <tr th:each="user : ${users}">
                 <td th:text="${user.id}"></td>
-                <td th:text="${user.clientName}"></td>
-                <td th:text="${user.clientSurname}"></td>
+                <td th:text="${user.userName}"></td>
+                <td th:text="${user.userSurname}"></td>
                 <td th:text="${user.telephoneNumber}"></td>
                 <td th:text="${user.email}"></td>
                 <td><a th:href="@{userupdate/{id}(id=${user.id})}">Edit</a></td>

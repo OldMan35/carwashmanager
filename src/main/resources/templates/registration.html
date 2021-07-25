@@ -8,12 +8,12 @@
 <div style="text-align: center;"/>
 <h1>Registration form</h1>
 <form th:method="POST" th:action="@{/registration}" th:object="${user}">
-    <label for="clientName">Name: </label>
-    <input type="text" th:field="*{clientName}" id="clientName">
+    <label for="userName">Name: </label>
+    <input type="text" th:field="*{userName}" id="userName">
     <!--    <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error text</div>-->
     <br/>
-    <label for="clientSurname">Surname: </label>
-    <input type="text" th:field="*{clientSurname}" id="clientSurname">
+    <label for="userSurname">Surname: </label>
+    <input type="text" th:field="*{userSurname}" id="userSurname">
     <!--    <div style="color: red" th:if="${#fields.hasErrors('clientSurname')}" th:errors="*{clientSurname}">error text</div>-->
     <br/>
     <label for="telephoneNumber">Telephone number: </label>

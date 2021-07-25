@@ -13,14 +13,19 @@ public class User {
     @SequenceGenerator(name = "jpaSequence", sequenceName = "JPA_SEQUENCE", allocationSize = 1, initialValue = 1 )
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
-    @Column(name = "client_name")
-    private String clientName;
-    @Column(name = "client_surname")
-    private String clientSurname;
+
+    @Column(name = "user_name")
+    private String userName;
+
+    @Column(name = "user_surname")
+    private String userSurname;
+
     @Column(name = "telephone_number")
     private String telephoneNumber;
+
     @Column(name = "email")
     private String email;
+
     @Column(name = "password")
     private String password;
 
