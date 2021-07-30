@@ -21,7 +21,7 @@ public class DefaultController {
         this.userService = userService;
     }
 
-    @GetMapping("/homepage")
+    @GetMapping("/")
     public String homepage() {
         return "homepage";
     }
@@ -41,7 +41,7 @@ public class DefaultController {
     @PostMapping("/registration")
     public String saveUser(User user) {
         userService.saveUser(user);
-        return "userpage";
+        return "redirect:/userpage";
     }
 
     @GetMapping("/userupdate/{id}")
